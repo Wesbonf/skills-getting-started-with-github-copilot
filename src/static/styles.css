@@ -74,6 +74,77 @@ section h3 {
   margin-bottom: 8px;
 }
 
+/* Nova seção de participantes */
+.participants-section {
+  margin-top: 12px;
+  padding-top: 12px;
+  border-top: 1px dashed #eee;
+}
+
+.participants-section h5 {
+  margin: 0 0 8px 0;
+  font-size: 14px;
+  color: #333;
+}
+
+/* lista bonita e legível com limite de altura */
+.participants-list {
+  list-style: none; /* hide bullets */
+  padding-left: 0;
+  margin: 0;
+  max-height: 110px;
+  overflow: auto;
+  background: linear-gradient(180deg, rgba(255,255,255,0.6), rgba(250,250,250,0.6));
+  border-radius: 4px;
+  padding: 8px 12px;
+  border: 1px solid #f0f0f0;
+}
+
+.participants-list li {
+  padding: 6px 8px;
+  color: #444;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.participant-email {
+  word-break: break-word;
+  margin-right: 8px;
+}
+
+.delete-participant {
+  background: transparent;
+  border: none;
+  color: #c62828;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 4px 6px;
+  border-radius: 4px;
+}
+
+.delete-participant:hover {
+  background: rgba(198,40,40,0.08);
+}
+
+/* estado quando não há participantes */
+.no-participants {
+  font-style: italic;
+  color: #777;
+  font-size: 14px;
+}
+
+/* sutil estilo da barra de rolagem para os navegadores baseados em WebKit */
+.participants-list::-webkit-scrollbar {
+  height: 6px;
+  width: 6px;
+}
+.participants-list::-webkit-scrollbar-thumb {
+  background: #d0d0d0;
+  border-radius: 3px;
+}
+
 .form-group {
   margin-bottom: 15px;
 }
