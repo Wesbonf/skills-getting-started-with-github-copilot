@@ -89,8 +89,8 @@ section h3 {
 
 /* lista bonita e legível com limite de altura */
 .participants-list {
-  list-style: disc;
-  padding-left: 20px;
+  list-style: none; /* hide bullets */
+  padding-left: 0;
   margin: 0;
   max-height: 110px;
   overflow: auto;
@@ -101,9 +101,31 @@ section h3 {
 }
 
 .participants-list li {
-  padding: 4px 0;
+  padding: 6px 8px;
   color: #444;
   font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.participant-email {
+  word-break: break-word;
+  margin-right: 8px;
+}
+
+.delete-participant {
+  background: transparent;
+  border: none;
+  color: #c62828;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 4px 6px;
+  border-radius: 4px;
+}
+
+.delete-participant:hover {
+  background: rgba(198,40,40,0.08);
 }
 
 /* estado quando não há participantes */
